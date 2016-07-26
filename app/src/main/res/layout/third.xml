@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat style="@style/settings_linearLayout">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/settings_textView"
+            android:text="@string/row" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/position_row"
+            style="@style/settings_editText"
+            android:inputType="number" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat style="@style/settings_linearLayout">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/settings_textView"
+            android:text="@string/_0_1" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/percent_button"
+            style="@style/settings_editText"
+            android:inputType="numberDecimal" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/save_settings"
+        style="@style/settings_save_button"
+        android:text="@string/ok" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <android.support.v7.widget.ListViewCompat
+        android:id="@+id/list_set"
+        style="@style/listView" />
+</android.support.v7.widget.LinearLayoutCompat>
